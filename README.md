@@ -21,6 +21,8 @@ $ docker run -it -e MYSQL_ROOT_PASSWORD=my-secret-pw --name=mysql_db_for_any_old
 $ docker run -itd --name=any_old_project --link mysql_db_for_any_old_project ${USER}/any-old-project
 ```
 
+That might not totally work, you may get an error when trying to start `mysqld`.  You'll likely see the error in `/var/log/mysqld.log`.  Because alternative methods work (see below) I'll prosue this no further.  Feel free to create an issue or start your own repo for booting MySQL locally.  
+
 
 ## Want a Cleaner Workflow?
 
